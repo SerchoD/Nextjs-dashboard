@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Forzar el esquema de color oscuro */
+html {
+  color-scheme: dark;
+}
+
+/* Estilos base para el modo dark */
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Auxiliar Borders */
+.brd-1 {
+  border: 2px solid;
+  border-color: rgb(255, 0, 0);
+}
+.brd-2 {
+  border: 2px solid;
+  border-color: rgb(0, 255, 0);
+}
+.brd-3 {
+  border: 2px solid;
+  border-color: rgb(5, 0, 255);
+}
+.brd-4 {
+  border: 2px solid;
+  border-color: rgb(255, 255, 0);
+}
+.brd-5 {
+  border: 2px solid;
+  border-color: rgb(255, 20, 147);
+}
